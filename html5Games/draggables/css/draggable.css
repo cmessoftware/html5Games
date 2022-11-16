@@ -1,0 +1,37 @@
+
+/* Este es el CSS para mi contenedor y elementos de la caja. 
+Ten en cuenta que el único CSS relacionado con la funcionalidad 
+DnD es la propiedad cursor: move El resto del código solo controla 
+el diseño y el estilo del contenedor y los elementos de la caja. */
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+  }
+  
+  .box {
+    border: 3px solid #666;
+    background-color: #ddd;
+    border-radius: .5em;
+    padding: 10px;
+    cursor: move;
+  }
+
+  .box.over {
+    border: 3px dotted #666;
+  }
+
+  .drop-area{
+    border: 3px solid #666;
+    background-color: #ddd;;
+    padding: 50px;
+    align-content: center;
+    margin-left: 500px;
+    margin-right:500px;
+    cursor: move;
+  }
+
+  .separator{
+    padding: 20px;
+  }
